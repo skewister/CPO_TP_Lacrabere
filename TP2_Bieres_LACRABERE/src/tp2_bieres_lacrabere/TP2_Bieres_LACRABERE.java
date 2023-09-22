@@ -16,21 +16,26 @@ public class TP2_Bieres_LACRABERE {
     public static void main(String[] args) {
         // TODO code application logic here       
 
-    BouteilleBiere uneBiere = new BouteilleBiere();
-    uneBiere.nom = "Cuvee des trolls";
-    uneBiere.brasserie = "Dubuisson";
-    uneBiere.degreAlcool = 7.0 ;
-    uneBiere.ouverte = false;
-    uneBiere.lireEtiquette();
+
     
-    BouteilleBiere une2ndBiere = new BouteilleBiere();
-    une2ndBiere.nom = "Leffe";
-    une2ndBiere.brasserie = "Abbaye de Leffe";
-    une2ndBiere.degreAlcool = 6.6 ;
-    une2ndBiere.ouverte = false;
-    une2ndBiere.lireEtiquette();
+    
+    BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson",true) ;
+    BouteilleBiere une2ndBiere = new BouteilleBiere("Leffe",6.6 ,"Lerdameur",false) ;
+    BouteilleBiere une3ndBiere = new BouteilleBiere("Desperados",7.8 ,"mexicaine",false) ;
+    BouteilleBiere une4ndBiere = new BouteilleBiere("Levrette",5.9 ,"Caffé",true) ;
+    BouteilleBiere une5ndBiere = new BouteilleBiere("Grimbergen",4.8 ,"Blonde",false) ;
+    
+    System.out.println(uneBiere) ;
+    uneBiere.Décapsuler();
+    System.out.println(uneBiere) ;
+    
+    System.out.println(une2ndBiere) ;
+    System.out.println(une3ndBiere) ;
+    System.out.println(une4ndBiere) ;
+    System.out.println(une5ndBiere) ;
+    
     }
-    
+
     
 }
 
